@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="owl.carousel.min.css">
   <link rel="stylesheet" href="owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <script src="jquery.min.js"></script>
   <script src="owl.carousel.min.js"></script>
 
@@ -30,21 +31,17 @@
     <section class="section-about">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-              <h2>Sobre a Empresa LSCHOOL INFOTECH </h2>
+            <div class="col-lg-12 ">
+              <h2 style="text-align: center;">LSCHOOL INFOTECH </h2>
               <p> A Lschool Infotech é uma empresa criada pelo Analista de Sistemas e especializado em Engenharia de Software, conhecido pelo nome Lucas Alencar Miranda, oferece serviços de desenvolvimento de software e tecnologia da informação. A Lschool Infotech, apresenta alguns de seus principais projetos e realizações, demonstrando a qualidade e a diversidade de seus serviços.</p>
-              <p> É uma empresa que fica sediada em Maceió no estado de Alagoas, foi fundada em 28/07/2020. É uma escola online e presencial de programação, oferecendo aulas, consultorias e mentorias de <strong>programação web, lógica de programação em linguagens de programação Python, Javascript, PHP e Java, Análise de dados e Inteligência Artificial.</strong> 
-              <p> Também são formadas turmas para <strong>cursos mais avançados de programação envolvendo banco de dados e integrações com API.</strong> As aulas presenciais são ministradas pela própria localidade do professor e as aulas online são pela plataforma Google Meet, totalmente ao vivo.</p>
-            </div>
-            <div class="col-md-6">
+              <p> É uma empresa que fica sediada em Maceió no estado de Alagoas, foi fundada em 28/07/2020. É uma escola online e presencial de programação, oferecendo aulas, consultorias e mentorias pela plataforma via <b>Google Meet.</b></p>
+            <div class="col-md-11">
               <div class="carousel">
                 <img src="img/bg.jpg" alt="Imagem 1" class="img-fluid">
-                <img src="img/sobre.jpeg" alt="Imagem 2" class="img-fluid">
-                <img src="img/company-image.png" alt="Imagem 3" class="img-fluid">
-              </div>
-              <div class="carousel-nav">
-                <button id="prev-btn">Anterior</button>
-                <button id="next-btn">Próximo</button>
+                <img src="img/company-image.png" alt="Imagem 2" class="img-fluid">
+                <img src="img/aluno1.png" alt="Imagem 4" class="img-fluid">
+                <img src="img/aluna2.png" alt="Imagem 5" class="img-fluid">
+                <img src="img/aluno3.png" alt="Imagem 6" class="img-fluid">
               </div>
             </div>
           </div>
@@ -55,7 +52,7 @@
         <div class="container">
           <h2>Cursos e turmas disponíveis</h2>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/php.jpg" alt="Curso 1">
                 <div class="card-body">
@@ -64,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/javascript.jpg" alt="Curso 2">
                 <div class="card-body">
@@ -73,7 +70,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/django.jpg" alt="Curso 3">
                 <div class="card-body">
@@ -137,27 +134,25 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     const carousel = document.querySelector('.carousel');
-    const prevBtn = document.querySelector('#prev-btn');
-    const nextBtn = document.querySelector('#next-btn');
     const scrollStep = carousel.offsetWidth;
-
-  prevBtn.addEventListener('click', () => {
-    carousel.scrollBy({
-      top: 0,
-      left: -scrollStep,
-      behavior: 'smooth'
-    });
-  });
-
-  nextBtn.addEventListener('click', () => {
-    carousel.scrollBy({
-      top: 0,
-      left: scrollStep,
-      behavior: 'smooth'
-    });
-  });
-
+    let currentPosition = 0;
+    let intervalId;
+  
+    function startCarousel() {
+      intervalId = setInterval(() => {
+        currentPosition += scrollStep;
+        if (currentPosition >= carousel.scrollWidth) {
+          currentPosition = 0;
+        }
+        carousel.scroll({
+          top: 0,
+          left: currentPosition,
+          behavior: 'smooth'
+        });
+      }, 1800);
+    }
+  
+    startCarousel();
   </script>
-
 </body>
 </html>
