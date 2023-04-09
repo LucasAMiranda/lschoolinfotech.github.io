@@ -8,7 +8,7 @@ header {
   background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   background-position: center center;
-  height: 60vh; /* definir a altura em porcentagem */
+  height: 160vh; /* definir a altura em porcentagem */
   display: flex;
   justify-content: center;
   align-items: center;
