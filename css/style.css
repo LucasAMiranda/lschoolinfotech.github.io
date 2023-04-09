@@ -1,13 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
 header {
-	background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
-	background-size: cover;
-	background-position: center center;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
+  background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: center center;
+  height: 60vh; /* definir a altura em porcentagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 4vw;
+  text-align: center;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
+  color: #cc00ff;
 }
 
 header:before {
@@ -25,18 +38,9 @@ header:hover:before {
 	opacity: 0.2;
 }
 
-header h1 {
-	color: #fff;
-	font-size: 50px;
-	text-align: center;
-	text-shadow: 2px 2px #000;
-	position: relative;
-	z-index: 1;
-}
-
 header::after {
 	content: "";
-	background: url(header-image.jpg);
+	background: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
 	background-size: cover;
 	background-position: center center;
 	position: absolute;
@@ -52,6 +56,45 @@ header::after {
 
 header:hover::after {
 	transform: translateZ(-1px) scale(1.5);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-nav button {
+  background-color: transparent;
+  color: rgb(199, 15, 186);
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.carousel-nav button:hover{
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
+  color: #cc00ff;
 }
 
 .section-one {
@@ -121,6 +164,9 @@ header:hover::after {
     transform: scale(1.1);
   }
 
+  .img-fluid{
+    margin-top: 60px;
+  }
 
   .courses-section{
     background-color: #1a1a1a;
@@ -128,7 +174,7 @@ header:hover::after {
     padding: 50px 0;
   }
   
-  .courses-section {
+  .courses-section h2 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
@@ -138,7 +184,7 @@ header:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -15px;
+    margin: 0 -10px;
   }
   
   .card {
@@ -147,9 +193,10 @@ header:hover::after {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin: 15px;
-    width: 300px;
-    height: 600px;
+    height: 530px;
+    margin: 20px 10px;
+    overflow: hidden;
+    width: 100%;
   }
   
   .card img {
@@ -181,6 +228,8 @@ header:hover::after {
     border-top: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
   }
   
   .card-footer button {
@@ -198,6 +247,18 @@ header:hover::after {
     background-color: #ff3333;
     cursor: pointer;
   }
+  
+  @media (min-width: 768px) {
+    .card {
+      flex: 1 0 auto;
+      width: 300px;
+    }
+  
+    .card-deck {
+      margin: 0 -15px;
+    }
+  }
+
 
   
   footer {
@@ -220,3 +281,26 @@ header:hover::after {
     color: #8B008B;
   }
   
+  @media (max-width: 767px ) {
+    header {
+      height: 40vh;
+    }
+    
+    header h1 {
+      font-size: 6vw;
+      text-shadow: 0.3vw 0.3vw #000;
+    }
+    
+    header::after {
+    transform: none;
+    }
+
+    .carousel img {
+      scroll-snap-align: start;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 50px;
+    }
+    
+  }

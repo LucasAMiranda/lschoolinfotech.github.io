@@ -8,6 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
+
 </head>
 <body>
 	<header>
@@ -31,8 +36,16 @@
               <p> É uma empresa que fica sediada em Maceió no estado de Alagoas, foi fundada em 28/07/2020. É uma escola online e presencial de programação, oferecendo aulas, consultorias e mentorias de <strong>programação web, lógica de programação em linguagens de programação Python, Javascript, PHP e Java, Análise de dados e Inteligência Artificial.</strong> 
               <p> Também são formadas turmas para <strong>cursos mais avançados de programação envolvendo banco de dados e integrações com API.</strong> As aulas presenciais são ministradas pela própria localidade do professor e as aulas online são pela plataforma Google Meet, totalmente ao vivo.</p>
             </div>
-            <div class="col-lg-6">
-              <img src="img/sobre.jpeg" alt="Imagem da Empresa" class="img-fluid">
+            <div class="col-md-6">
+              <div class="carousel">
+                <img src="img/bg.jpg" alt="Imagem 1" class="img-fluid">
+                <img src="img/sobre.jpeg" alt="Imagem 2" class="img-fluid">
+                <img src="img/company-image.png" alt="Imagem 3" class="img-fluid">
+              </div>
+              <div class="carousel-nav">
+                <button id="prev-btn">Anterior</button>
+                <button id="next-btn">Próximo</button>
+              </div>
             </div>
           </div>
         </div>
@@ -42,31 +55,30 @@
         <div class="container">
           <h2>Cursos e turmas disponíveis</h2>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/php.jpg" alt="Curso 1">
                 <div class="card-body">
                   <h5 class="card-title">Curso de PHP com MYSQL do Zero ao Profissional</h5>
-                  <p class="card-text">O curso de PHP com MySQL pode ser oferecido em formato presencial ou online, com aulas teóricas e práticas.
-                   Ao final do curso, os alunos estarão aptos a desenvolver aplicativos web dinâmicos utilizando PHP e MySQL, aumentando suas chances de inserção no mercado de trabalho na área de desenvolvimento web.</p>
+                  <p class="card-text">Neste curso, você irá dominar a linguagem PHP e aprender a utilizar o banco de dados MySQL para desenvolver aplicações web completas, desde páginas simples até sistemas complexos. </p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/javascript.jpg" alt="Curso 2">
                 <div class="card-body">
                   <h5 class="card-title">Curso de Desenvolvimento Web Master Javascript</h5>
-                  <p class="card-text">O curso geralmente começa com uma revisão dos conceitos básicos de HTML e CSS, ensinando como utilizar essas tecnologias para criar páginas web estáticas e responsivas. Em seguida, o curso avança para o Javascript, ensinando desde os conceitos básicos até os mais avançados da linguagem.</p>
+                  <p class="card-text">O curso de Desenvolvimento Web Master JavaScript é ideal para quem deseja se tornar um especialista em programação web. Com uma abordagem prática e dinâmica, você aprenderá a criar sites e aplicações web completas utilizando a linguagem JavaScript e Reactjs.
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="img/django.jpg" alt="Curso 3">
                 <div class="card-body">
                   <h5 class="card-title">Curso De Django e Python do Zero Ao Profissional</h5>
-                  <p class="card-text">O curso geralmente começa com uma introdução ao Python, ensinando os conceitos básicos de programação, incluindo variáveis, condicionais, loops, funções e orientação à objetos. Em seguida, o curso avança para o Django, ensinando desde os conceitos básicos até os mais avançados do framework.</p>
+                  <p class="card-text"> Com Django, os desenvolvedores podem criar facilmente aplicações que integram bancos de dados, lidam com autenticação de usuários, gerenciam sessões e muito mais, tornando o processo de desenvolvimento de aplicações web mais ágil e eficiente. </p>
                   </div>
                 </div>
               </div>
@@ -123,7 +135,29 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popperjs-core.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const prevBtn = document.querySelector('#prev-btn');
+    const nextBtn = document.querySelector('#next-btn');
+    const scrollStep = carousel.offsetWidth;
 
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({
+      top: 0,
+      left: -scrollStep,
+      behavior: 'smooth'
+    });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({
+      top: 0,
+      left: scrollStep,
+      behavior: 'smooth'
+    });
+  });
+
+  </script>
 
 </body>
 </html>
