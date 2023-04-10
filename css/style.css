@@ -20,7 +20,7 @@ header h1 {
   font-size: 6vw;
   text-align: center;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
-  color: #f6f6f6;
+  color: #f0f0f0;
 }
 
 header:before {
@@ -178,7 +178,6 @@ b {
   }
   
   .btn-learn-more {
-    width: 550px;
     background-color: #8B008B;
     border-radius: 30px;
     color: #fff;
@@ -308,13 +307,61 @@ b {
   }
   
     /* Estilos para dispositivos móveis */
-  @media only screen and (max-width: 768px) {
-    .col-md-4 {
-      width: 100%;
-      margin-right: 40px;
+  @media only screen and (min-width: 375px) {
 
+    header {
+      background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
+      background-size: cover;
+      background-position: center center;
+      height: 160vh; /* definir a altura em porcentagem */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
     }
-  
+    
+    header h1 {
+      font-size: 6vw;
+      text-align: center;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
+      color: #faeefd;
+    }
+    
+    header:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: opacity 0.5s;
+    }
+    
+    header:hover:before {
+      opacity: 0.2;
+    }
+    
+    header::after {
+      content: "";
+      background: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+      z-index: -1;
+      transform: translateZ(-1px) scale(2);
+      transition: transform 0.5s;
+    }
+    
+    header:hover::after {
+      transform: translateZ(-1px) scale(1.5);
+    }
     
     /* Estilização do título */
     h2 {
@@ -339,8 +386,16 @@ b {
     b {
       color: #ff5a5f;
     }
-    
-    
+
+    .col-md-4{
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 1px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+     
     .carousel {
       display: flex;
       overflow-x: scroll;
@@ -436,12 +491,10 @@ b {
       }
       
       .btn-learn-more {
-        width: 550px;
         background-color: #8B008B;
         border-radius: 30px;
         color: #fff;
         transition: all 0.3s ease-in-out;
-        width: 550px;
       }
       
       .btn-learn-more:hover {
@@ -534,29 +587,6 @@ b {
         cursor: pointer;
       }
       
-      @media (max-width: 768px) {
-        .card {
-          flex: 1 0 auto;
-          width: 300px;
-        }
-      
-        .card-deck {
-          margin: 0 -15px;
-        }
-
-        .btn-learn-more {
-          width: 350px;
-          background-color: #8B008B;
-          border-radius: 30px;
-          color: #fff;
-          transition: all 0.3s ease-in-out;
-        }
-        
-        .btn-learn-more:hover {
-          transform: scale(1.1);
-        }
-    
-      }
     
       footer {
         background-color: #010204;
@@ -719,15 +749,20 @@ b {
       .contact-form textarea {
         resize: none;
       }
-
+      
+      .btn-learn-more {
+        background-color: #8B008B;
+        border-radius: 30px;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .btn-learn-more:hover {
+        transform: scale(1.1);
+      }
+    
       .img-fluid{
         margin-top: 60px;
-      }
-
-      .col-md-4 {
-        width: 100%;
-        margin-right: 26px;
-  
       }
     
       .courses-section{
@@ -819,7 +854,7 @@ b {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .col-md-4 {
       width: 50%;
-      margin-right: 40px;
+      margin-left: 30px;
     }
   }
 
