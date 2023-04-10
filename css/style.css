@@ -489,6 +489,7 @@ b {
       }
       
       .btn-learn-more {
+        width: 550px;
         background-color: #8B008B;
         border-radius: 30px;
         color: #fff;
@@ -594,6 +595,18 @@ b {
       
         .card-deck {
           margin: 0 -15px;
+        }
+
+        .btn-learn-more {
+          width: 350px;
+          background-color: #8B008B;
+          border-radius: 30px;
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+        }
+        
+        .btn-learn-more:hover {
+          transform: scale(1.1);
         }
     
       }
@@ -759,19 +772,7 @@ b {
       .contact-form textarea {
         resize: none;
       }
-      
-      .btn-learn-more {
-        width: 550px;
-        background-color: #8B008B;
-        border-radius: 30px;
-        color: #fff;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .btn-learn-more:hover {
-        transform: scale(1.1);
-      }
-    
+
       .img-fluid{
         margin-top: 60px;
       }
