@@ -17,10 +17,10 @@ header {
 }
 
 header h1 {
-  font-size: 4vw;
+  font-size: 6vw;
   text-align: center;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
-  color: #cc00ff;
+  color: #f6f6f6;
 }
 
 header:before {
@@ -314,60 +314,7 @@ b {
       margin-right: 40px;
 
     }
-
-    header {
-      background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
-      background-size: cover;
-      background-position: center center;
-      height: 160vh; /* definir a altura em porcentagem */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    header h1 {
-      font-size: 4vw;
-      text-align: center;
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
-      color: #cc00ff;
-    }
-    
-    header:before {
-      content: "";
-      background: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: opacity 0.5s;
-    }
-    
-    header:hover:before {
-      opacity: 0.2;
-    }
-    
-    header::after {
-      content: "";
-      background: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
-      background-size: cover;
-      background-position: center center;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.5;
-      z-index: -1;
-      transform: translateZ(-1px) scale(2);
-      transition: transform 0.5s;
-    }
-    
-    header:hover::after {
-      transform: translateZ(-1px) scale(1.5);
-    }
+  
     
     /* Estilização do título */
     h2 {
