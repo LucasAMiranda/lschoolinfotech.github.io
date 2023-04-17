@@ -275,9 +275,6 @@ b {
     cursor: pointer;
   }
 
-  .col-lg-4{
-    height: 445px;
-  }
   
   @media (max-width: 768px) {
     .card {
@@ -402,7 +399,7 @@ b {
     }
     
   .col-lg-4{
-    height: 350px;
+    height: 473px;
     margin-right: 20px;
   }
      
