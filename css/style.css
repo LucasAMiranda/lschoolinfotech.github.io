@@ -89,9 +89,6 @@ b {
   overflow: hidden;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
- 
-  
-  
 }
 
 .carousel img {
@@ -119,6 +116,10 @@ b {
 
 .section-about{
   background-color: #f9f9f9;
+}
+
+.py-5{
+  justify-content: center;
 }
 
 .section-one {
@@ -273,6 +274,10 @@ b {
     background-color: #ff3333;
     cursor: pointer;
   }
+
+  .col-lg-4{
+    height: 445px;
+  }
   
   @media (max-width: 768px) {
     .card {
@@ -307,7 +312,7 @@ b {
   }
   
     /* Estilos para dispositivos móveis */
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 420px) {
 
     header {
       background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
@@ -395,6 +400,11 @@ b {
       margin-right: auto;
       margin-left: auto;
     }
+    
+  .col-lg-4{
+    height: 350px;
+    margin-right: 20px;
+  }
      
     .carousel {
       display: flex;
