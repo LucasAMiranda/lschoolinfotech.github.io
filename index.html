@@ -213,6 +213,13 @@
 		</div>
 	</footer>
 
+  <div id="cookie-banner">
+    <p>Este site usa cookies para melhorar sua experiência de navegação. Ao continuar navegando, você concorda com o uso de cookies.</p>
+    <button id="cookie-accept">Aceitar</button>
+    <button id="cookie-decline">Recusar</button>
+  </div>
+  
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popperjs-core.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -256,6 +263,49 @@
         document.getElementById("scroll-up").style.bottom = "20px";
       }
     }
+    
+    //cookies
+    var cookieBanner = document.getElementById('cookie-banner');
+    var cookieAccept = document.getElementById('cookie-accept');
+    var cookieDecline = document.getElementById('cookie-decline');
+
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    function cookieAccepted() {
+      setCookie('cookies-accepted', true, 365);
+      cookieBanner.style.display = 'none';
+    }
+
+    function cookieDeclined() {
+      setCookie('cookies-accepted', false, 365);
+      cookieBanner.style.display = 'none';
+    }
+
+    if (getCookie('cookies-accepted') === 'true') {
+      cookieBanner.style.display = 'none';
+    }
+
+    cookieAccept.addEventListener('click', cookieAccepted);
+    cookieDecline.addEventListener('click', cookieDeclined);
 
   </script>
 </body>
