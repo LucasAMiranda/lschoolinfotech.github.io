@@ -16,6 +16,39 @@
 
 </head>
 <body>
+  <div id="scroll-up">
+    <a href="#top">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">LSCHOOL INFOTECH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cursos">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#depoimentos">Depoimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rede-social">Redes sociais</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
 	<header>
 		<div class="header-container">
 			<div class="container">
@@ -28,7 +61,7 @@
 		</div>
 	</header>
 
-    <section class="section-about">
+    <section id="sobre" class="section-about">
         <div class="container">
           <div class="row">
             <div class="col-md-12 ">
@@ -47,7 +80,7 @@
         </div>
       </section>
 
-      <section class="courses-section">
+      <section id="cursos" class="courses-section">
         <div class="container">
           <h2>Cursos e turmas disponíveis</h2>
           <div class="row justify-content-center">
@@ -138,7 +171,7 @@
         </div>
       </section>
 
-      <section class="section-contact">
+      <section id="contato" class="section-contact">
         <div class="container">
           <div class="row" style="justify-content: center;">
             <div class="col-md-6">
@@ -160,7 +193,7 @@
       </section>
       
 
-	<footer>
+	<footer id="rede-social">
 		<div class="footer-container">
 			<div class="container">
 				<div class="row">
@@ -204,6 +237,26 @@
     }
   
     startCarousel();
+
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll-up").style.display = "block";
+      } else {
+        document.getElementById("scroll-up").style.display = "none";
+      }
+
+      // verificar se o rodapé é alcançado
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        document.getElementById("scroll-up").style.bottom = "80px";
+      } else {
+        document.getElementById("scroll-up").style.bottom = "20px";
+      }
+    }
+
   </script>
 </body>
 </html>
