@@ -16,11 +16,6 @@
 
 </head>
 <body>
-  <div id="scroll-up">
-    <a href="#top">
-      <i class="fa fa-arrow-up"></i>
-    </a>
-  </div>
 
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="#">LSCHOOL INFOTECH</a>
@@ -37,6 +32,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#depoimentos">Depoimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicos">Serviços</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contato">Contato</a>
@@ -113,9 +111,9 @@
               </div>
             </div>
           </div>
-          <div class="text-center">
-            <a href="https://api.whatsapp.com/message/TWMM7BBF3ZRZC1" target="_blank" class="btn btn-primary">
-              <img src="img/whatsapp.svg" alt="WhatsApp"> Conversar comigo
+          <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=82998300281" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
             </a>
           </div>
         </div>
@@ -171,11 +169,76 @@
         </div>
       </section>
 
+      <!-- Seção Serviços -->
+      <section id="servicos">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="section-title">Serviços</h2>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-icon">
+                      <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Aulas particulares de programação</h3>
+                    <p>Aulas particulares ao vivo pelo <b>Google Meet</b> e domicílio na localidade do professor</p>
+                    <ul class="service-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>SQL</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <h3>Desenvolvimento de sites</h3>
+                      <p>Crio sites personalizados de acordo com as necessidades dos meus clientes. Minhas habilidades incluem:</p>
+                      <ul class="service-list">
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Jquery & Ajax</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="service-box">
+                      <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                      </div>
+                      <h3>Consultorias em TI</h3>
+                      <p>Ofereço consultoria em TI para empresas que desejam melhorar seus processos e tecnologias. Minhas habilidades incluem:</p>
+                      <ul class="service-list">
+                        <li>Postman</li>
+                        <li>REST API</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>PHP</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       <section id="contato" class="section-contact">
         <div class="container">
           <div class="row" style="justify-content: center;">
             <div class="col-md-6">
               <h2>Entre em Contato</h2>
+              <hr class="my-4">
               <form class="contact-form" action="https://formsubmit.co/lcmschoolinfotech@gmail.com" method="POST">
                 <div class="form-group">
                   <input type="text" id="name" class="form-control" name="nome" placeholder="Seu Nome" required>
@@ -186,7 +249,7 @@
                 <div class="form-group">
                   <textarea class="form-control" id="message" name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
                 </div>
-                <a href="mailto:lcmschooinfotech@gmail.com"><button type="submit" class="btn btn-learn-more"><b style="color:#fff">Quero Aprender</b></button></a>
+                <a href="mailto:lcmschooinfotech@gmail.com"><button type="submit" class="btn btn-learn-more"><b>Quero Aprender</b></button></a>
               </form>
             </div>
         </div>
@@ -202,10 +265,9 @@
 					</div>
 					<div class="col-md-6">
 						<div class="social-media-icons">
-							<a href="https://www.linkedin.com/in/lucas-alencar-miranda-87a231113/" target="_blank"><i class="fab fa-linkedin"></i></a>
 							<a href="https://www.instagram.com/lschoolinfotech.oficial/" target="_blank"><i class="fab fa-instagram"></i></a>
               <a href="https://www.facebook.com/LSchoolinfotech" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://www.youtube.com/channel/UC0Ah4_01WTighRnq1NJgOkw" target="_blank"><i class="fab fa-youtube" style="color:#8B008B" ></i></a>
+              <a href="https://github.com/LucasAMiranda" target="_blank"><i class="fab fa-github"></i></a>
 						</div>
 					</div>
 				</div>
