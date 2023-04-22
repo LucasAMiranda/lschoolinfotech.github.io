@@ -1,7 +1,28 @@
 *{
   margin: 0;
   padding: 0;
+  
 
+}
+body {
+  background-color: #222;
+  
+}
+
+.card-header {
+  background-color: #333;
+}
+
+.btn-link {
+  color: #fff;
+}
+
+.card-body {
+  background-color: #444;
+}
+
+.text-center{
+  color: #ff5a5f;
 }
 
 #scroll-up {
@@ -338,7 +359,7 @@ b {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    height: 530px;
+    height: 100px;
     margin: 20px 10px;
     overflow: hidden;
     width: 100%;
@@ -649,6 +670,18 @@ b {
     .carousel-nav button:hover{
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cc00ff, 0 0 70px #cc00ff, 0 0 80px #cc00ff, 0 0 100px #cc00ff, 0 0 150px #cc00ff;
       color: #cc00ff;
+    }
+
+    .card {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      height: 100px;
+      margin: 20px 10px;
+      overflow: hidden;
+      width: 100%;
     }
     
     .section-about{
@@ -1033,7 +1066,7 @@ b {
         border: none;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        height: 530px;
+        height: 280px;
         margin: 20px 10px;
         overflow: hidden;
         width: 100%;
