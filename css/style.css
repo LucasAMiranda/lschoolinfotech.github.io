@@ -59,6 +59,23 @@ body {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.fixed-top {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.fixed-top .nav-link {
+  color: #222;
+}
+
+.navbar.fixed-top img {
+  filter: invert(100%);
+}
+
 header {
   background-image: url("https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
