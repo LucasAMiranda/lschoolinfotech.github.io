@@ -18,7 +18,7 @@
 <body>
 
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="#">LSCHOOL INFOTECH</a>
+    <img src="img/favicon.png" style="width: 100px;" navbar-brand href="#">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,7 +63,6 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 ">
-              <h2 style="text-align: center;">LSCHOOL INFOTECH </h2>
               <p> A Lschool Infotech é uma empresa criada pelo Analista de Sistemas e especializado em Engenharia de Software, conhecido pelo nome Lucas Alencar Miranda, oferece serviços de desenvolvimento de software e tecnologia da informação. A Lschool Infotech, apresenta alguns de seus principais projetos e realizações, demonstrando a qualidade e a diversidade de seus serviços.</p>
               <p> É uma empresa que fica sediada em Maceió no estado de Alagoas, foi fundada em 28/07/2020. É uma escola online e presencial de programação, oferecendo aulas, consultorias e mentorias pela plataforma via <b>Google Meet.</b></p>
             <div class="col-md-8 mx-auto">
@@ -80,36 +79,47 @@
 
       <section id="cursos" class="courses-section">
         <div class="container">
-          <h2>Cursos e turmas disponíveis</h2>
+          <h2>Planos de Aulas</h2>
           <div class="row justify-content-center">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/php.jpg" alt="Curso 1">
+                <img class="card-img-top" src="img/basico.jpg" alt="Curso 1">
                 <div class="card-body">
-                  <h5 class="card-title">Curso de PHP com MYSQL do Zero ao Profissional</h5>
-                  <p class="card-text">Neste curso, você irá dominar a linguagem PHP e aprender a utilizar o banco de dados MySQL para desenvolver aplicações web completas, desde páginas simples até sistemas complexos. </p>
+                  <h5 class="card-title">Basic</h5>
+                  <p class="card-text">Nesse plano você vai aprender lógica de programação em PHP, Javascript, Java, Python. Com estruturas de controle de fluxo como condicionais, repetição e funções.</p>
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Por Apenas R$ 50,00/mês</button>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/javascript.jpg" alt="Curso 2">
+                <img class="card-img-top" src="img/intermediario.jpg" alt="Curso 2">
                 <div class="card-body">
-                  <h5 class="card-title">Curso de Desenvolvimento Web Master Javascript</h5>
-                  <p class="card-text">O curso de Desenvolvimento Web Master JavaScript é ideal para quem deseja se tornar um especialista em programação web. Com uma abordagem prática e dinâmica, você aprenderá a criar sites e aplicações web.</p>
+                  <h5 class="card-title">Intermediate</h5>
+                  <p class="card-text">Nesse plano você vai aprender a trabalhar com estruturas de dados complexas, uso de APIs e bibliotecas de terceiros, desenvolvimento de algoritmos mais complexos, entre outros.</p>
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Por Apenas 12x de R$ 50,00</button>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/django.jpg" alt="Curso 3">
+                <img class="card-img-top" src="img/avancado.jpg" alt="Curso 3">
                 <div class="card-body">
-                  <h5 class="card-title">Curso De Django e Python do Zero Ao Profissional</h5>
-                  <p class="card-text"> Com Django, os desenvolvedores podem criar facilmente aplicações que integram bancos de dados, lidam com autenticação de usuários, gerenciam sessões e muito mais, tornando o processo de desenvolvimento de aplicações web mais ágil. </p>
-                  </div>
+                  <h5 class="card-title">Advanced</h5>
+                  <p class="card-text">Nesse plano você vai aprender a desenvolver projetos complexos, uso avançado de bibliotecas e frameworks, programação orientada a objetos, entre outros.</p>
+                  <button type="button" class="btn btn-primary btn-lg btn-block">Por Apenas 12x de R$ 100,00 </button>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=82998300281" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
           </div>
           <div class="whatsapp">
             <a href="https://api.whatsapp.com/send?phone=82998300281" target="_blank" rel="noopener noreferrer">
@@ -274,14 +284,7 @@
 			</div>
 		</div>
 	</footer>
-
-  <div id="cookie-banner">
-    <p>Este site usa cookies para melhorar sua experiência de navegação. Ao continuar navegando, você concorda com o uso de cookies.</p>
-    <button id="cookie-accept">Aceitar</button>
-    <button id="cookie-decline">Recusar</button>
-  </div>
   
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popperjs-core.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -325,50 +328,6 @@
         document.getElementById("scroll-up").style.bottom = "20px";
       }
     }
-    
-    //cookies
-    var cookieBanner = document.getElementById('cookie-banner');
-    var cookieAccept = document.getElementById('cookie-accept');
-    var cookieDecline = document.getElementById('cookie-decline');
-
-    function setCookie(name, value, days) {
-      var expires = "";
-      if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-      }
-      document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    }
-
-    function getCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-      }
-      return null;
-    }
-
-    function cookieAccepted() {
-      setCookie('cookies-accepted', true, 365);
-      cookieBanner.style.display = 'none';
-    }
-
-    function cookieDeclined() {
-      setCookie('cookies-accepted', false, 365);
-      cookieBanner.style.display = 'none';
-    }
-
-    if (getCookie('cookies-accepted') === 'true') {
-      cookieBanner.style.display = 'none';
-    }
-
-    cookieAccept.addEventListener('click', cookieAccepted);
-    cookieDecline.addEventListener('click', cookieDeclined);
-
   </script>
 </body>
 </html>
