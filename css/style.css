@@ -382,7 +382,7 @@ b {
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    height: 460px;
+    height: 383px;
     margin: 20px 10px;
     overflow: hidden;
     width: 100%;
@@ -408,7 +408,7 @@ b {
   }
 
   .text-muted{
-    color: #cc0000 !important;
+    color:#e0e0e0 !important;
   }
   
   .card-text {
@@ -826,7 +826,7 @@ b {
       }
       
       .card-body {
-        padding: 20px;
+        padding: 23px;
       }
       
       .card-title {
@@ -849,7 +849,7 @@ b {
         border: none;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        height: 460px;
+        height: 383px;
         margin: 20px 10px;
         overflow: hidden;
         width: 100%;
@@ -1109,7 +1109,7 @@ b {
       }
       
       .card-body {
-        padding: 20px;
+        padding: 23px;
       }
       
       .card-title {
