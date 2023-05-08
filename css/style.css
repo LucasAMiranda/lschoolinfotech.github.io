@@ -631,12 +631,12 @@ b {
       }
 
       .service-list {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 0;
-      color: #007aff;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      }
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+        color: #007aff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
 
       .service-list li {
       margin-bottom: 10px;
