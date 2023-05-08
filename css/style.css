@@ -89,8 +89,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-
 .header-container {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -636,6 +634,8 @@ b {
       list-style: none;
       padding: 0;
       margin-bottom: 0;
+      color: #007aff;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
 
       .service-list li {
@@ -760,6 +760,12 @@ b {
       text-shadow: 2px 2px 5px #222;
       font-family: 'Montserrat', sans-serif;
     }
+
+    
+    .text-center{
+      color: #ff5a5f;
+    }
+
     
     /* Estilização dos parágrafos */
     p {
