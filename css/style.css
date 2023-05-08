@@ -4,10 +4,102 @@
   
 
 }
+/* Estilos para o modo dark */
 body {
-  background-color: #222;
-  
+  background-color: #1e1e1e;
+  color: #fff;
 }
+
+/* Estilos para links */
+a {
+  color: #007aff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Estilos para cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  background-color: #000;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Estilos para a seção de destaque */
+.highlight-section {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Estilos para a seção de produtos */
+.product-section {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+/* Estilos para a seção de destaque */
+.highlight-section {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Estilos para a seção de produtos */
+.product-section {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+/* Estilos para a seção de rodapé */
+.footer-section {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Estilos para tornar o site responsivo */
+@media only screen and (max-width: 768px) {
+  /* Estilos para a barra de navegação */
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  /* Estilos para a seção de destaque */
+  .highlight-section {
+    padding: 80px 15px;
+  }
+
+  /* Estilos para a seção de produtos */
+  .product-section {
+    padding: 80px 15px;
+  }
+}
+
+
+
+.header-container {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 
 .card-header {
   background-color: #333;
@@ -23,7 +115,7 @@ body {
 }
 
 .text-center{
-  color: #ff5a5f;
+  color: #fff;
 }
 
 #scroll-up {
@@ -52,32 +144,56 @@ body {
   color: #e9e9e9;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #007bff;
-}
-
-.navbar-brand {
-  color: #fff;
-  font-size: 28px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
+/* Estilos para a barra de navegação */
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   transition: all 0.3s ease-in-out;
 }
 
-.navbar.fixed-top {
+.navbar.sticky {
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
   background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
 }
 
-.navbar.fixed-top .nav-link {
-  color: #222;
+.navbar a:hover::before {
+  transform: scaleX(1);
 }
 
-.navbar.fixed-top img {
-  filter: invert(100%);
+.navbar a.active,
+.navbar a.active::before {
+  background-color: #fff;
 }
 
 
@@ -139,7 +255,7 @@ header:hover::after {
 h2 {
   text-align: center;
   font-size: 3em;
-  color: #ff5a5f;
+  color: #fff;
   text-shadow: 2px 2px 5px #222;
   font-family: 'Montserrat', sans-serif;
 }
@@ -158,6 +274,8 @@ p {
 b {
   color: #ff5a5f;
 }
+
+
 
 
 .carousel {
@@ -191,8 +309,14 @@ b {
   color: #cc00ff;
 }
 
-.section-about{
-  background-color: #f9f9f9;
+.section-about {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Cor do texto dos parágrafos */
+.section-about p {
+  color: #fff;
 }
 
 .py-5{
@@ -983,23 +1107,17 @@ b {
       color: #cc00ff;
     }
     
-    .section-about{
-      background-color: #f9f9f9;
-    }
-    
-    .section-one {
-        padding: 50px 0;
-    }
-    
-    .section-one h2 {
-        margin-bottom: 20px;
-    }
-    
-    .section-one p {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    
+   /* Background escuro para a seção */
+  .section-about {
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Cor do texto dos parágrafos */
+  .section-about p {
+    color: #fff;
+  }
+
     .social-media-icons {
         display: flex;
         justify-content: flex-end;
