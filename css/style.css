@@ -955,10 +955,6 @@ b {
         border-top-right-radius: 10px;
       }
       
-      .card-body {
-        padding: 23px;
-      }
-      
       .card-title {
         font-size: 24px;
         font-weight: bold;
@@ -970,7 +966,10 @@ b {
         line-height: 1.5;
         margin-bottom: 20px;
         color: #fff;
-    
+      }
+
+      .card-body{
+        padding-top: 7px;
       }
 
       .card-course{
@@ -979,7 +978,7 @@ b {
         border: none;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        height: 383px;
+        height: 370px;
         margin: 20px 10px;
         overflow: hidden;
         width: 100%;
@@ -1212,17 +1211,27 @@ b {
         margin: 0 -10px;
       }
       
+  
       .card {
         background-color: #222;
         color: #fff;
         border: none;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        height: 480px;
-        margin: 20px 10px;
-        overflow: hidden;
-        width: 100%;
+        height: auto;
+        margin: 20px auto;
       }
+      
+      .card-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .card-description {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+      
       
       .card img {
         width: 100%;
@@ -1232,9 +1241,6 @@ b {
         border-top-right-radius: 10px;
       }
       
-      .card-body {
-        padding: 23px;
-      }
       
       .card-title {
         font-size: 24px;
