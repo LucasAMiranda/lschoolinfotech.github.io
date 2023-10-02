@@ -97,7 +97,7 @@ body {
 .hero {
   text-align: center;
   padding: 100px 0;
-  background: url('img/Banner.png') center/cover no-repeat;
+  background: url('img/banner.png') center/cover no-repeat;
 }
 
 .cta-button {
