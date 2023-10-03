@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,116 +19,124 @@
           <div class="logo">
             <img src="img/logo.png" alt="Logo">
             <span>Treinamento em TI</span>
-          </div>
-          <div class="menu-toggle">
+        </div>
+        <div class="menu-toggle">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
-          </div>
-          <ul class="menu">
+        </div>
+        <ul class="menu">
             <li><a href="#sobre" class="active">Sobre</a></li>
             <li><a href="#cursos">Cursos</a></li>
             <li><a href="#formacoes">Formações</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#perguntas">Perguntas Frequentes</a></li>
             <li><a href="#contato">Contato</a></li>
+            <div class="close-menu">x</div> <!-- Ícone "X" para fechar o menu -->
           </ul>
         </div>
       </nav>
       
   
-  
       <header class="hero">
-        <div class="container">
-          <div class="header-content">
-            <img src="img/banner.png" alt="banner-school" class="hero-image img-fluid">
-            <a href="https://api.whatsapp.com/send?phone=82998300281" class="cta-button" target="_blank">Fale comigo</a>
-          </div>
-        </div>
+        <div class="whatsapp-chat">
+            <a href="https://api.whatsapp.com/send?phone=82998300281" target="_blank" rel="noopener noreferrer">
+              <img src="img/whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>  
       </header>
       
+    <section id="banner" class="banner">
+        <div>
+            <div class="container">
+                <img src="img/banner.png" alt="banner-bussines">
+            </div>
+        </div>
+    </section>
 
     <section id="sobre" class="about">
         <div class="container">
-            <h2>Sobre Nós</h2>
+            <h2>Sobre</h2>
             <img src="img/company-image.png">
-            <p>Somos uma escola de tecnologia dedicada a ensinar programação de forma prática e eficaz.</p>
+            <p>Uma escola de tecnologia dedicada a ensinar programação de forma prática e eficaz.</p>
         </div>
     </section>
 
     <section id="cursos" class="courses">
         <div class="container">
-            <h2>Nossos Cursos</h2>
+            <h2>Cursos</h2>
             <div class="card-course">
                 <img src="img/course1.png " alt="Curso 1">
                 <h3>Curso de Desenvolvimento Web</h3>
                 <p>Aprenda a criar sites incríveis com HTML, CSS, Javascript e PHP.</p>
             </div>
+          
+            <div class="card-course">
+                <img src="img/course2.png" alt="Curso 2">
+                <h3>Curso de Programação para Iniciante</h3>
+                <p>
+                    Aprenda a programar neste curso, ele foi pensado para quem nunca mexeu com programação e tem vontade de conhecer este mundo. Por isso, neste curso não vamos focar em nenhuma linguagem de programação de computador, mas conceitos e fundamentos gerais que todo o programador necessita saber.
+                </p>
+                <p>
+                    Além disso, você aprenderá como modelar dados usando UML para a montagem do banco de dados com comandos de SQL para consulta, criação de telas e muito mais, o que facilitará o progresso em uma linguagem de programação específica posteriormente.
+                </p>
+            </div>
         </div>
-        <div class="card-course">
-          <img src="img/course2.png" alt="Curso 2">
-          <h3>Curso de Programação para Iniciante</h3>
-          <p>
-            Aprenda a programar neste curso, ele foi pensado para quem nunca mexeu com programação e tem vontade de conhecer este mundo. Por isso, neste curso não vamos focar em nenhuma linguagem de programação de computador, mas conceitos e fundamentos gerais que todo o programador necessita saber.
-        </p>
-        <p>
-            Além disso, você aprenderá como modelar dados usando UML para a montagem do banco de dados com comandos de SQL para consulta, criação de telas e muito mais, o que facilitará o progresso em uma linguagem de programação específica posteriormente.
-        </p>
-
-      </div>
-  </div>
     </section>
 
+
     <section id="depoimentos" class="testimonials">
-      <div class="container">
+        <div class="container-depoimento">
           <h2>Cursos que geram resultados</h2>
           <p>Conheça <b>depoimentos de alguns alunos</b> que passaram pela <b>Lschool InfoTech</b></p>
           <div class="testimonial-carousel">
-              <div class="testimonial">
-                  <div class="testimonial-image">
-                      <img src="img/testimonial1.png" alt="Depoimento 1">
-                  </div>
-                  <div class="testimonial-content">
-                      <p>"Ótimo professor! Nota 1000! Muito atencioso, paciente e competente. Estou aprendendo Javascript com ele e está sendo top! Super indico!!"</p>
-                      <cite>Valquiria</cite>
-                  </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="img/testimonial1.png" alt="Depoimento 1">
               </div>
-              <div class="testimonial">
-                  <div class="testimonial-image">
-                      <img src="img/testimonial2.png" alt="Depoimento 2">
-                  </div>
-                  <div class="testimonial-content">
-                      <p>"Ótimo professor, paciente com muita didática. Tem muito tempo de experiência."</p>
-                      <cite>Jhonata J.</cite>
-                  </div>
+              <div class="testimonial-content">
+                <p>"Ótimo professor! Nota 1000! Muito atencioso, paciente e competente. Estou aprendendo Javascript com ele e está sendo top! Super indico!!"</p>
+                <cite>Valquiria</cite>
               </div>
-              <div class="testimonial">
-                  <div class="testimonial-image">
-                      <img src="img/testimonial3.png" alt="Depoimento 3">
-                  </div>
-                  <div class="testimonial-content">
-                      <p>"Professor paciente, responsável e o melhor de tudo, domina bastante o que fala! Recomendo bastante pra quem está começando igual o meu caso e pra quem já conhece de programação. Não vão se arrepender!"</p>
-                      <cite>Luiz C.</cite>
-                  </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="img/testimonial2.png" alt="Depoimento 2">
               </div>
+              <div class="testimonial-content">
+                <p>"Ótimo professor, paciente com muita didática. Tem muito tempo de experiência."</p>
+                <cite>Jhonata J.</cite>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image">
+                <img src="img/testimonial3.png" alt="Depoimento 3">
+              </div>
+              <div class="testimonial-content">
+                <p>"Professor paciente, responsável e o melhor de tudo, domina bastante o que fala! Recomendo bastante pra quem está começando igual o meu caso e pra quem já conhece de programação. Não vão se arrepender!"</p>
+                <cite>Luiz C.</cite>
+              </div>
+            </div>
           </div>
-      </div>
-  </section>
+          
+        </div>
+      </section>
+      
   
 
     <section id="formacoes" class="formations">
         <div class="container">
-            <h2>Nossas Formações</h2>
+            <h2>Formações</h2>
             <div class="formation-card">
                 <img src="img/formation1.png" alt="Formação 1" width="320px">
                 <h3>Formação Front-end Master</h3>
                 <p>Torne-se um especialista em desenvolvimento Front-end.</p>
             </div>
             <div class="formation-card">
-              <img src="img/formation2.png" alt="Formação 2" width="320px">
-              <h3>Formação Django Master</h3>
-              <p>Torne-se um especialista em desenvolvimento Back-end em Python com Django.</p>
-          </div>
+                <img src="img/formation2.png" alt="Formação 2" width="320px">
+                <h3>Formação Django Master</h3>
+                <p>Torne-se um especialista em desenvolvimento Back-end em Python com Django.</p>
+            </div>
             <div class="formation-card">
                 <img src="img/formation3.png" alt="Formação 3" width="320px">
                 <h3>Formação Analista de Dados Master</h3>
@@ -139,7 +147,7 @@
 
     <section id="servicos" class="services">
         <div class="container">
-            <h2>Nossos Serviços</h2>
+            <h2>Serviços</h2>
             <div class="service">
                 <img src="img/consultoria.png" atl="Serviço" width="420px">
                 <h3>Consultoria de Software</h3>
@@ -159,7 +167,7 @@
             <h2>Perguntas Frequentes</h2>
             <div class="faq-item">
                 <h3>Como posso me inscrever nos cursos?</h3>
-                <p>Para se inscrever em nossos cursos, só falar diretamente comigo pelo <b>Fale Comigo</b> 
+                <p>Para se inscrever em nossos cursos, só falar diretamente comigo pelo <b>WhatsApp</b> ou envie um <b>E-mail</b>. 
             </div>
             <div class="faq-item">
                 <h3>Quais são os requisitos de sistema para os cursos online?</h3>
@@ -167,39 +175,6 @@
             </div>
         </div>
     </section>
-
-        <!--Formulario
-        <form action="processar_formulario.php" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required class="form-control" placeholder="Nome Completo">
-          </div>
-        
-          <div class="form-group">
-            <label for="email">E-mail (utilize seu e-mail pessoal):</label>
-            <input type="email" id="email" name="email" required class="form-control" placeholder="Seu e-mail pessoal">
-          </div>            
-        
-          <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" required class="form-control" placeholder="(XX) XXXX-XXXX">
-          </div>
-          
-        
-          <div class="form-group form-checkbox-label">
-            <input type="checkbox" id="whatsapp" name="whatsapp" class="form-checkbox">
-            <label for="whatsapp">Este número é também do seu WhatsApp</label>
-          </div>
-          
-        
-            Adicione o widget reCAPTCHA 
-          <div class="g-recaptcha" data-sitekey="6LdB0mcoAAAAAKAQDFHrkmgEFbhJpJ0mY8m6uCj4"></div>
-        
-          <div class="form-group">
-            <input type="submit" value="Enviar" class="submit-button">
-          </div>
-        </form>
-      -->
 
       <footer id="contato" class="footer">
         <div class="container">
@@ -212,48 +187,22 @@
         </div>
     </footer>
     
+    
+    <div class="modal" id="cookie-modal">
+        <div class="modal-content">
+          <span class="close" id="close-cookie-modal">&times;</span>
+          <h2>Este site utiliza cookies</h2>
+          <p>Usamos cookies para garantir que você obtenha a melhor experiência em nosso site.</p>
+          <button class="modal-button" id="accept-cookie">Aceitar</button>
+        </div>
+      </div>
+      
+      
+      
+
     <!-- JavaScript e outros scripts aqui -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navbar = document.querySelector('.navbar');
-            const menu = document.querySelector('.menu');
-
-            menuToggle.addEventListener('click', function () {
-                navbar.classList.toggle('active');
-                menu.classList.toggle('active');
-            });
-        });
-
-        // Função para exibir o modal de cookies
-        function openCookieModal() {
-            const cookieModal = document.getElementById('cookie-modal');
-            cookieModal.style.display = 'flex';
-        }
-
-        // Função para fechar o modal de cookies
-        function closeCookieModal() {
-            const cookieModal = document.getElementById('cookie-modal');
-            cookieModal.style.display = 'none';
-        }
-
-        // Verificar se o usuário já aceitou os cookies
-        const acceptedCookies = localStorage.getItem('acceptedCookies');
-
-        if (!acceptedCookies) {
-            openCookieModal();
-        }
-
-        // Manipulador de evento para o botão "Aceitar"
-        const acceptButton = document.getElementById('accept-cookie');
-
-        acceptButton.addEventListener('click', function () {
-            closeCookieModal();
-            // Salvar aceitação dos cookies no armazenamento local
-            localStorage.setItem('acceptedCookies', 'true');
-        });
-
-        const testimonialCarousel = document.querySelector('.testimonial-carousel');
+         const testimonialCarousel = document.querySelector('.testimonial-carousel');
         const testimonialItems = Array.from(document.querySelectorAll('.testimonial'));
 
         let currentPosition = 0;
@@ -280,6 +229,52 @@
 
         startCarousel();
 
+        // Seleciona os elementos do menu
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+        const closeMenu = document.querySelector(".close-menu");
+
+        // Adiciona um evento de clique ao ícone do menu hamburguer
+        menuToggle.addEventListener("click", function () {
+            menu.classList.toggle("active"); // Abre ou fecha o menu
+            menuToggle.classList.toggle("active"); // Alterna a animação do ícone hamburguer
+            });
+
+        // Adiciona um evento de clique ao ícone "X" para fechar o menu
+        closeMenu.addEventListener("click", function () {
+            menu.classList.remove("active"); // Fecha o menu
+            menuToggle.classList.remove("active"); // Remove a animação do ícone hamburguer
+        });
+
+       // JavaScript para exibir o modal quando a página carregar
+        window.addEventListener('DOMContentLoaded', function () {
+            var modal = document.getElementById('cookie-modal');
+            if (modal) {
+                modal.style.display = 'block';
+            }
+        });
+
+        // JavaScript para fechar o modal quando o botão "Aceitar" ou o botão de fechar (X) é clicado
+        var acceptButton = document.getElementById('accept-cookie');
+        var closeButton = document.getElementById('close-cookie-modal');
+
+        if (acceptButton) {
+            acceptButton.addEventListener('click', function () {
+                var modal = document.getElementById('cookie-modal');
+                if (modal) {
+                modal.style.display = 'none';
+                }
+            });
+        }
+
+        if (closeButton) {
+            closeButton.addEventListener('click', function () {
+                var modal = document.getElementById('cookie-modal');
+                if (modal) {
+                modal.style.display = 'none';
+                }
+            });
+        }
     </script>
 </body>
 </html>
