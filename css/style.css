@@ -58,6 +58,10 @@ body {
   align-items: center;
 }
 
+.close-menu{
+  display: none !important;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -454,7 +458,7 @@ body {
     }
   
     .close-menu {
-      display: block;
+      display: block !important;
       cursor: pointer;
       position: absolute;
       top: 20px;
