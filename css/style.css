@@ -418,6 +418,17 @@ body {
   margin: 0 10px;
   text-decoration: none;
 }
+/*Estilos desktops media queries */
+  @media (max-width: 1440px){
+    .banner img{
+      display: flex;
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: -2px;
+      width: 100%;
+    }
+
+  }
 
 /* Estilos responsivos usando media queries */
   @media (max-width: 768px) {
