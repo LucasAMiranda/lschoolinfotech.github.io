@@ -45,18 +45,10 @@
             </a>
         </div>  
       </header>
-      
-    <section id="banner" class="banner">
-        <div>
-            <div class="container">
-                <img src="img/banner.png" alt="banner-bussines">
-            </div>
-        </div>
-    </section>
+    
 
     <section id="sobre" class="about">
         <div class="container">
-            <h2>Sobre</h2>
             <img src="img/company-image.png">
             <p>Uma escola de tecnologia dedicada a ensinar programação de forma prática e eficaz.</p>
         </div>
@@ -73,16 +65,36 @@
           
             <div class="card-course">
                 <img src="img/course2.png" alt="Curso 2">
-                <h3>Curso de Programação para Iniciante</h3>
+                <h3>Programação Avançada com Python</h3>
                 <p>
-                    Aprenda a programar neste curso, ele foi pensado para quem nunca mexeu com programação e tem vontade de conhecer este mundo. Por isso, neste curso não vamos focar em nenhuma linguagem de programação de computador, mas conceitos e fundamentos gerais que todo o programador necessita saber.
-                </p>
-                <p>
-                    Além disso, você aprenderá como modelar dados usando UML para a montagem do banco de dados com comandos de SQL para consulta, criação de telas e muito mais, o que facilitará o progresso em uma linguagem de programação específica posteriormente.
+                   Este curso é quem quer aprender a programar na linguagem de programação Python de forma avançada.
+                   Se familiriaziando com o paradigma orientado a objeto, bibliotecas, Api e Integração com banco de dados.
                 </p>
             </div>
         </div>
     </section>
+        
+    <section id="formacoes" class="formations">
+        <div class="container">
+            <h2>Formações</h2>
+            <div class="formation-card">
+                <img src="img/formation1.png" alt="Formação 1" width="320px">
+                <h3>Formação Front-end Master</h3>
+                <p>Torne-se um especialista em desenvolvimento Front-end.</p>
+            </div>
+            <div class="formation-card">
+                <img src="img/formation2.png" alt="Formação 2" width="320px">
+                <h3>Formação Django Master</h3>
+                <p>Torne-se um especialista em desenvolvimento Back-end em Python com Django.</p>
+            </div>
+            <div class="formation-card">
+                <img src="img/formation3.png" alt="Formação 3" width="320px">
+                <h3>Formação Analista de Dados Master</h3>
+                <p>Prepare-se para uma carreira emocionante em análise de dados.</p>
+            </div>
+        </div>
+    </section>
+  
 
 
     <section id="depoimentos" class="testimonials">
@@ -124,26 +136,6 @@
       
   
 
-    <section id="formacoes" class="formations">
-        <div class="container">
-            <h2>Formações</h2>
-            <div class="formation-card">
-                <img src="img/formation1.png" alt="Formação 1" width="320px">
-                <h3>Formação Front-end Master</h3>
-                <p>Torne-se um especialista em desenvolvimento Front-end.</p>
-            </div>
-            <div class="formation-card">
-                <img src="img/formation2.png" alt="Formação 2" width="320px">
-                <h3>Formação Django Master</h3>
-                <p>Torne-se um especialista em desenvolvimento Back-end em Python com Django.</p>
-            </div>
-            <div class="formation-card">
-                <img src="img/formation3.png" alt="Formação 3" width="320px">
-                <h3>Formação Analista de Dados Master</h3>
-                <p>Prepare-se para uma carreira emocionante em análise de dados.</p>
-            </div>
-        </div>
-    </section>
 
     <section id="servicos" class="services">
         <div class="container">
@@ -197,84 +189,6 @@
         </div>
       </div>
       
-      
-      
-
-    <!-- JavaScript e outros scripts aqui -->
-    <script>
-         const testimonialCarousel = document.querySelector('.testimonial-carousel');
-        const testimonialItems = Array.from(document.querySelectorAll('.testimonial'));
-
-        let currentPosition = 0;
-        let intervalId;
-
-        function startCarousel() {
-            intervalId = setInterval(() => {
-                currentPosition++;
-                if (currentPosition >= testimonialItems.length) {
-                    currentPosition = 0;
-                }
-                scrollToTestimonial(currentPosition);
-            }, 5000); // Troca de depoimento a cada 5 segundos (5000 milissegundos)
-        }
-
-        function scrollToTestimonial(position) {
-            const scrollStep = testimonialItems[0].offsetWidth;
-            testimonialCarousel.scroll({
-                top: 0,
-                left: position * scrollStep,
-                behavior: 'smooth'
-            });
-        }
-
-        startCarousel();
-
-        // Seleciona os elementos do menu
-        const menuToggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
-        const closeMenu = document.querySelector(".close-menu");
-
-        // Adiciona um evento de clique ao ícone do menu hamburguer
-        menuToggle.addEventListener("click", function () {
-            menu.classList.toggle("active"); // Abre ou fecha o menu
-            menuToggle.classList.toggle("active"); // Alterna a animação do ícone hamburguer
-            });
-
-        // Adiciona um evento de clique ao ícone "X" para fechar o menu
-        closeMenu.addEventListener("click", function () {
-            menu.classList.remove("active"); // Fecha o menu
-            menuToggle.classList.remove("active"); // Remove a animação do ícone hamburguer
-        });
-
-       // JavaScript para exibir o modal quando a página carregar
-        window.addEventListener('DOMContentLoaded', function () {
-            var modal = document.getElementById('cookie-modal');
-            if (modal) {
-                modal.style.display = 'block';
-            }
-        });
-
-        // JavaScript para fechar o modal quando o botão "Aceitar" ou o botão de fechar (X) é clicado
-        var acceptButton = document.getElementById('accept-cookie');
-        var closeButton = document.getElementById('close-cookie-modal');
-
-        if (acceptButton) {
-            acceptButton.addEventListener('click', function () {
-                var modal = document.getElementById('cookie-modal');
-                if (modal) {
-                modal.style.display = 'none';
-                }
-            });
-        }
-
-        if (closeButton) {
-            closeButton.addEventListener('click', function () {
-                var modal = document.getElementById('cookie-modal');
-                if (modal) {
-                modal.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
