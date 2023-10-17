@@ -159,6 +159,7 @@ body {
 /* Centraliza horizontalmente a imagem */
 .about img {
   max-width: 100%;
+  width: 100%;
   display: block; /* Centraliza horizontalmente a imagem */
   margin: 0 auto; /* Centraliza horizontalmente o bloco de conteúdo */
   border-radius: 5px;
