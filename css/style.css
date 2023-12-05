@@ -78,6 +78,10 @@ p {
   margin-right: 10px;
 }
 
+span{
+  margin-top: 20px;
+}
+
 
 .menu-toggle {
   display: none;
