@@ -294,7 +294,7 @@ span{
 
 .container .formation-card {
   width: 300px; /* Largura dos cartões */
-  height: 220px; /* Altura fixa dos cartões */
+  height: 275px; /* Altura fixa dos cartões */
   background-color: #fff;
   border-radius: 5px;
   margin: 0 20px 20px; /* Espaçamento entre os cartões e abaixo de cada cartão */
