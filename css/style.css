@@ -234,6 +234,9 @@ span{
   text-align: center;
 }
 
+.container-depoimento p{
+  color: #333;
+}
 
 .testimonial-content {
   background-color: #fff;
