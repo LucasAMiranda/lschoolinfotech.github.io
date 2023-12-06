@@ -213,6 +213,10 @@ span{
   border-radius: 5px;
 }
 
+.btn {
+  margin-top: -23px;
+}
+
 /* Estilos do carrossel de depoimentos */
 .testimonial-carousel {
   display: flex;
